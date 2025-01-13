@@ -1,0 +1,17 @@
+{
+  "RemotePath": "\\\\escaped\\path\\to\\remove\\folder",
+  "LocalPath": ".\\bin",
+  "BackupFolderName": "_backup",
+  "SetHiddenAttributeOnBackupFolder": true,
+  "IgnoreFiles": [
+    "*.bak",
+    "*.log",
+    "*.~*",
+    ".*"
+  ],
+  "IgnoreDirs": [
+    "_backup",
+    "log",
+    ".*"
+  ]
+}
