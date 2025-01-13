@@ -68,16 +68,17 @@
     {
       var ussageHint = $@"usage: {_process.ProcessName} <cmd> [<options>]
 where <cmd> is:
-  new         initializes a new syncdir.settings.json in the current directory (or the given filename using the -s otion)
-  view        show differences between local and remote directories
-  pull        pulls changes from remote to local directory
-  push        pushes changes from local to remote directory
+  view          show differences between local and remote directories
+  pull          pulls changes from remote to local directory
+  push          pushes changes from local to remote directory
+  new           initializes a new syncdir.settings.json in the current directory
+                (or the given filename using the -s otion)
 
 the local and remove directory are taken from file ""syncdir.settings.json"" in the current directory
-(if not specified otherwise).
+(if not specified otherwise using the -s otion).
 
 optional <options> are:
-  -s <filename>      use the settings file provided instead of the default ""syncdir.settings.json""
+  -s <filename> use the settings file provided instead of the default ""syncdir.settings.json""
 ";
       Console.WriteLine(ussageHint);
       var projectUrl = _assembly.GetCustomAttributes<AssemblyMetadataAttribute>()
